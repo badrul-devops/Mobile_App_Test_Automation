@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testng Cucumber Suite" parallel="tests" thread-count="1" data-provider-thread-count="2">
+    <test name="Calculation Test" annotations="@MobileTest" preserve-order="true">
+        <parameter name="deviceName" value="Pixel XL" />
+        <parameter name="platformName" value="Android" />
+        <parameter name="portNumber" value="4723" />
+        <classes>
+            <class name="testRunner.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>
