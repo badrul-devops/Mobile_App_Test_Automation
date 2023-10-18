@@ -1,19 +1,19 @@
 package pages;
 
 import io.appium.java_client.AppiumDriver;
-import pages.AdditionPage.AdditionPage;
+import pages.AdditionPage.TestingApp;
 
 public class PageObjectManager {
 
     public static AppiumDriver driver;
-    public AdditionPage additionPage;
+    public TestingApp testingApp;
 
     public PageObjectManager(AppiumDriver driver) {
         this.driver = driver;
     }
-    public AdditionPage getAdditionPage() {
-        additionPage = new AdditionPage(driver);
-        return additionPage;
+    public TestingApp getAdditionPage() {
+        testingApp = new TestingApp(driver);
+        return testingApp;
     }
 
 }

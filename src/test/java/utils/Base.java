@@ -16,13 +16,13 @@ public class Base {
 
 //        startAppiumService(portNumber);
         DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setCapability("deviceName", "Pixel XL");
-        cap.setCapability("udid", "emulator-5554");
-        cap.setCapability("deviceVersion", "14");
+        cap.setCapability("deviceName", "Badrul-phone");
+//        cap.setCapability("udid", "emulator-5554");
+        cap.setCapability("deviceVersion", "12");
         cap.setCapability("platformName", "Android");
 
-        cap.setCapability("appPackage", "com.google.android.calculator");
-        cap.setCapability("appActivity", "com.android.calculator2.Calculator");
+        cap.setCapability("appPackage", "musicplayer.musicapps.music.mp3player");
+        cap.setCapability("appActivity", "musicplayer.musicapps.music.mp3player.activities.SplashActivity");
 
         URL url = new URL("http://127.0.0.1:4723/wd/hub");
         driver = new AppiumDriver(url, cap);
